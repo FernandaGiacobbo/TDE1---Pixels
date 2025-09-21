@@ -5,6 +5,7 @@ public class Pixel {
         this.y = y;
     }
 
+    //Método getter pra retornar as cordenadas
     public int getX() {
         return x;
     }

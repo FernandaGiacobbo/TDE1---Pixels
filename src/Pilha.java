@@ -7,10 +7,12 @@ public class Pilha {
         topo = -1;
     }
 
+    //Método pra empilhar um pixel
     public void push(Pixel p) {
         dados[++topo] = p;
     }
 
+    //Método pra desempilhar um pixel
     public Pixel pop() {
         return dados[topo--];
     }

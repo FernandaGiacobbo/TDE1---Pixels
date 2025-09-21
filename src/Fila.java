@@ -1,12 +1,14 @@
 public class Fila {
 
-    private Node primeiro;
-    private Node ultimo;
+    private Node primeiro; //Ponteiro pro primeiro ná da fila
+    private Node ultimo; //Ponteiro pro último ná da fila
 
+    //Classe que representa um nó da fila
     private static class Node {
-        Pixel valor;
-        Node proximo;
+        Pixel valor; 
+        Node proximo; 
 
+        //Construtor do nó que recebe um pixel como valor
         Node(Pixel valor) {
             this.valor = valor;
         }
@@ -16,7 +18,7 @@ public class Fila {
     public void enqueue(Pixel valor) {
         Node novo = new Node(valor);
         if (ultimo != null) {
-            ultimo.proximo = novo;
+            ultimo.proximo = novo; // Faz o último nó apontar para o novo nó
         }
         ultimo = novo;
         if (primeiro == null) {
@@ -28,7 +30,7 @@ public class Fila {
     public Pixel dequeue() {
         if (primeiro == null) return null;
 
-        Pixel valor = primeiro.valor;
+        Pixel valor = primeiro.valor; //Armazena o valor do primeiro nó pra retornar depois
         primeiro = primeiro.proximo;
 
         if (primeiro == null) {
