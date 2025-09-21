@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         BufferedImage imagem = null;
         int x = 50, y = 50; // ponto inicial
-        Color novaCor = Color.BLUE; // cor para preencher
+        Color novaCor = Color.RED; // cor para preencher
 
         try {
             // Limpa a pasta de frames antes de começar
