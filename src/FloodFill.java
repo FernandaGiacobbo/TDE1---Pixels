@@ -9,6 +9,11 @@ import java.awt.Color;
 public class FloodFill {
     // contador global para controlar os frames
     private static int contador = 0;
+    
+    // Método para resetar o contador
+    public static void resetarContador() {
+        contador = 0;
+    }
 
     public static void preencherComPilha(BufferedImage img, int x, int y, Color novaCor) {
         int largura = img.getWidth();
