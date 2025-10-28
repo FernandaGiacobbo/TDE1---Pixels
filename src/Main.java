@@ -19,7 +19,10 @@ public class Main {
             FloodFill.resetarContador();
 
             //Aplicar o algoritmo Flood Fill (Fila ou Pilha)
-            FloodFill.preencherComFila(imagem, x, y, novaCor);
+            //FloodFill.preencherComFila(imagem, x, y, novaCor);
+
+            //Para preencher com a pilha, usar:
+            FloodFill.preencherComPilha(imagem, x, y, novaCor);
 
             //Salva a imagem final
             ImageIO.write(imagem, "png", new File("saida.png"));
